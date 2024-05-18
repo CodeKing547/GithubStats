@@ -12,13 +12,13 @@
                 <form>
                   <div class="form-group">
                     <input type="text" class="form-control form-control-sm" v-model="username" 
-                    id="username" text="nlckysolutions" v-on:focusout="getRepos" 
+                    id="username" value="nlckysolutions" v-on:focusout="getRepos" 
                     v-on:keyup.enter="setFocus" readonly>
                   </div>
 
                   <div class="form-group">
                     <input type="text" class="form-control form-control-sm" v-model="repository" 
-                    list="repos" id="repository" ref="search" text="NlckyADB-NADB" 
+                    list="repos" id="repository" ref="search" value="NlckyADB-NADB" 
                     v-on:keyup.enter="sendReq" readonly>
                     <datalist id="repos">
                       <option v-for="(repo , index) in repos" :key="index"> {{repo}} </option>
